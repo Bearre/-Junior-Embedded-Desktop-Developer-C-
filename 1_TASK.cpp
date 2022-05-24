@@ -33,20 +33,9 @@ class Manipulator
         position.set_coord(x,y);
     }
 	
-    double get_x()
-    {
-        return position.get_x();
-    }
-    
-    double get_y()
-    {
-        return position.get_y();
-    }
-    
-    double get_radius()
-    {
-        return radius;
-    }
+    double get_x() { return position.get_x(); }
+    double get_y() { return position.get_y(); }
+    double get_radius() { return radius; }
 };
 
 
@@ -58,7 +47,7 @@ double distance_between(Manipulator &a, Point &b)
 
 void what_manupulator_to_use(Manipulator manipulator1, Manipulator manipulator2, Point target)
 {
-	if((distance_between(manipulator1, target) < distance_between(manipulator2, target)) && distance_between(manipulator1, target) <= manipulator1.get_radius())
+    if((distance_between(manipulator1, target) < distance_between(manipulator2, target)) && distance_between(manipulator1, target) <= manipulator1.get_radius())
     {
         std::cout<<"manipulator_1"<<'\n';
     } 
