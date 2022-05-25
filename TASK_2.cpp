@@ -17,8 +17,8 @@ class Point
             x = a;
             y = b;
         }
-        double get_x() noexcept { return x; }
-        double get_y() noexcept { return y; }
+        double get_x() const noexcept { return x; }
+        double get_y() const noexcept { return y; }
 };
 
 
@@ -35,9 +35,9 @@ class Manipulator
         position = p;
     }
     
-    double get_x() noexcept { return position.get_x(); }
-    double get_y() noexcept { return position.get_y(); }
-    double get_radius() noexcept { return radius; }
+    double get_x() const noexcept { return position.get_x(); }
+    double get_y() const noexcept { return position.get_y(); }
+    double get_radius() const noexcept { return radius; }
 };
 
 
