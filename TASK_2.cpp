@@ -9,7 +9,7 @@ class Point
     double y = 0;
     
     public:
-        Point() = default;
+        Point();
         Point(double a, double b): x(a), y(b) {}
         
         void set_coord(double a, double b) noexcept
@@ -28,7 +28,7 @@ class Manipulator
     Point position = Point(0,0);
     
     public:
-    Manipulator() = default;
+    Manipulator();
     Manipulator(Point p, double r)
     {
         radius = r;
