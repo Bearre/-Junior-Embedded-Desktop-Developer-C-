@@ -8,7 +8,7 @@ class Coords
     double z = 0;
     
     public:
-        Coords() = default;
+        Coords();
         Coords(double a, double b, double c): x(a), y(b), z(c) {}
         Coords& operator+=(Coords c2)
         {
