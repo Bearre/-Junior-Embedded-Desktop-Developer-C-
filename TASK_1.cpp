@@ -8,7 +8,7 @@ class Point
     int y = 0;
     
     public:
-        Point() = default;
+        Point();
         Point(int a, int b): x(a), y(b) {}
         
         void set_coord(int a, int b)
